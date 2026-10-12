@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff1f5">
+<title>For Lakshita ♡</title>
+<style>
+:root{--pink:#f7a9c4;--rose:#c94f7c;--ink:#4c3040;--cream:#fff8fa}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(145deg,#fff7fa,#ffe8f0 55%,#fffafc);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+main{max-width:820px;margin:auto;padding:22px 16px 60px}
+.hero{min-height:75vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;font:12px Arial,sans-serif;color:#ad5d7d}
+h1{font-size:clamp(42px,9vw,78px);font-weight:normal;line-height:1.02;margin:20px 0 12px}
+h1 span{color:var(--rose);font-style:italic}
+.subtitle{font:15px/1.7 Arial,sans-serif;max-width:440px;color:#785366}
+.pill{border:1px solid #edb5c9;border-radius:99px;padding:12px 20px;margin-top:22px;background:#ffffff9c;color:#9d3e67;font:13px Arial,sans-serif}
+.heart{font-size:30px;color:#e681a6;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+.float{position:absolute;font-size:24px;opacity:.6;animation:float 6s ease-in-out infinite}
+.f1{top:15%;left:10%}.f2{top:22%;right:12%;animation-delay:1s}.f3{bottom:17%;left:17%;animation-delay:2s}.f4{bottom:14%;right:16%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+section{background:#ffffffb8;border:1px solid #f5d2df;border-radius:24px;padding:24px;margin:18px 0;box-shadow:0 12px 36px #c94f7c0b}
+h2{font-weight:normal;font-size:27px;margin:0 0 15px;color:#a13d68}
+p{font:15px/1.85 Arial,sans-serif;color:#654b5a}
+.letter{white-space:pre-line}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:18px 0}
+.time{background:#fff0f5;border-radius:16px;padding:14px 5px;text-align:center}
+.time b{display:block;font:28px Arial,sans-serif;color:#b94774}.time small{font:10px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+input[type=date]{padding:11px;border-radius:12px;border:1px solid #edb5c9;background:white;color:var(--ink);font:14px Arial,sans-serif}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.memory{min-height:170px;border-radius:17px;overflow:hidden;background:#ffeaf2;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.memory img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.memory span{padding:20px;font:13px/1.6 Arial,sans-serif;color:#a34b70}
+.media{width:100%;border-radius:14px;margin-top:10px}
+.btn{display:inline-block;background:#c94f7c;color:white;border:0;border-radius:99px;padding:12px 18px;text-decoration:none;font:13px Arial,sans-serif;cursor:pointer;margin:5px}
+.center{text-align:center}.foot{text-align:center;font:12px Arial,sans-serif;color:#9a7185;padding-top:24px}
+@media(max-width:480px){section{padding:19px}.gallery{grid-template-columns:1fr 1fr}.memory{min-height:130px}.countdown{gap:5px}.time b{font-size:22px}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<div class="float f1">♡</div><div class="float f2">✿</div><div class="float f3">♡</div><div class="float f4">✧</div>
+<div class="eyebrow">a little page made just for you</div>
+<h1>Happy Birthday,<br><span>Lakshita</span> ♡</h1>
+<div class="heart">♥</div>
+<p class="subtitle">Some people leave beautiful memories behind. Today, I just wanted to celebrate you and wish you a day full of little things that make you smile.</p>
+<div class="pill">✨ open this whenever you need a smile ✨</div>
+</header>
+
+<section>
+<h2>🎂 Your birthday countdown</h2>
+<p>Set her birthday below to start the countdown. If today is her birthday, it will show a birthday message.</p>
+<div class="center"><input id="birthday" type="date" aria-label="Lakshita's birthday"></div>
+<div class="countdown">
+<div class="time"><b id="days">—</b><small>Days</small></div><div class="time"><b id="hours">—</b><small>Hours</small></div><div class="time"><b id="mins">—</b><small>Minutes</small></div><div class="time"><b id="secs">—</b><small>Seconds</small></div>
+</div><p id="countText" class="center">A little countdown to your special day ♡</p>
+</section>
+
+<section>
+<h2>💌 A little birthday letter</h2>
+<p class="letter">Dear Lakshita,
+
+Happy birthday. I hope this new year of your life brings you peace, happiness, good health, and all the little things your heart has been wishing for.
+
+Whatever our story looks like now, I’ll always be grateful for the moments that were real and the memories that still make me smile. Today isn’t about asking for anything or expecting anything back — it’s simply about wishing someone who once meant a lot to me a genuinely beautiful day.
+
+Keep smiling, keep growing, and never forget how special you are in your own way. I hope life is gentle with you and gives you countless reasons to be happy.
+
+Have the loveliest birthday, Lakshita. You deserve good things. ♡
+
+— Karan</p>
+</section>
+
+<section>
+<h2>📸 Little memory corner</h2>
+<p>Replace the sample image files in the <b>assets</b> folder with your own photos, keeping the same filenames.</p>
+<div class="gallery">
+<div class="memory"><img src="assets/photo1.jpg" alt="Memory 1" onerror="this.style.display='none'"><span>Our favourite memory ♡<br><small>Add photo1.jpg</small></span></div>
+<div class="memory"><img src="assets/photo2.jpg" alt="Memory 2" onerror="this.style.display='none'"><span>A moment to remember ✨<br><small>Add photo2.jpg</small></span></div>
+<div class="memory"><img src="assets/photo3.jpg" alt="Memory 3" onerror="this.style.display='none'"><span>One for the memories 🌷<br><small>Add photo3.jpg</small></span></div>
+<div class="memory"><img src="assets/photo4.jpg" alt="Memory 4" onerror="this.style.display='none'"><span>Always wishing you well ♡<br><small>Add photo4.jpg</small></span></div>
+</div>
+</section>
+
+<section>
+<h2>🎶 A song for the moment</h2>
+<p>Add a song you have permission to share as <b>music.mp3</b> inside the assets folder. Music starts only when the visitor presses play.</p>
+<audio class="media" controls preload="none"><source src="assets/music.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+</section>
+
+<section>
+<h2>🎬 A tiny birthday video</h2>
+<p>Put your birthday video in the assets folder and name it <b>birthday.mp4</b>.</p>
+<video class="media" controls playsinline preload="metadata" poster="assets/video-poster.jpg"><source src="assets/birthday.mp4" type="video/mp4">Your browser does not support video.</video>
+</section>
+
+<div class="center"><p>Made with care, just for you</p><div class="heart">♡</div></div>
+<div class="foot">A small birthday surprise • From Karan to Lakshita</div>
+</main>
+<script>
+const dateInput=document.getElementById('birthday');
+function update(){
+ const val=dateInput.value;
+ if(!val){['days','hours','mins','secs'].forEach(id=>document.getElementById(id).textContent='—');document.getElementById('countText').textContent='Choose the birthday date to begin ♡';return;}
+ const now=new Date(), d=new Date(val+'T00:00:00');
+ if(d.toDateString()===now.toDateString()){['days','hours','mins','secs'].forEach(id=>document.getElementById(id).textContent='0');document.getElementById('countText').textContent='It’s your day, Lakshita! Happy birthday! 🎂';return;}
+ if(d<now){d.setFullYear(now.getFullYear()+1);}
+ let diff=Math.max(0,d-now);
+ const units=[86400000,3600000,60000,1000], ids=['days','hours','mins','secs'];
+ units.forEach((u,i)=>{const n=Math.floor(diff/u);document.getElementById(ids[i]).textContent=i===0?n:n% (i===1?24:60);diff-=n*u;});
+ document.getElementById('countText').textContent='Counting down to your special day ♡';
+}
+dateInput.addEventListener('change',update);setInterval(update,1000);update();
+</script>
+</body>
+</html>
